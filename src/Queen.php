@@ -11,7 +11,7 @@
     function canAttack ($a, $b) {
 
       if(($this->x != $a)&&($this->y != $b)){
-        if ($this->x - $a == $this->y - $b){
+        if (abs($this->x - $a) == abs($this->y - $b)){
           echo "true";
         } else {
           echo "false";
